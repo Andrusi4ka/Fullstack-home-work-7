@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/*************************************/
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+h1,
+h2 {
+    text-align: center;
+    padding: 30px 0 30px;
+}
+
+header {
+    ul {
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid #b6b6b6;
+        border-bottom: 1px solid #b6b6b6;
+
+        li {
+            a {
+                display: block;
+                padding: 15px 30px 15px;
+
+                &:hover {
+                    background-color: #d4ddec;
+                }
+            }
+        }
+
+        .active {
+            background-color: #d4ddec;
+        }
+    }
+}
+
+.flex-box {
+    .row {
+        display: flex;
+        gap: 20px;
+        padding: 20px 0 20px;
+        border-bottom: 1px solid #b6b6b6;
+
+        .description {
+            width: 50%;
+
+            .style-name {
+                font-weight: bold;
+                font-family: "Inconsolata", "Source Code Pro", "Consolas", "Monaco", "Courier", monospace;
+                padding: 0 0 15px;
+            }
+
+            .style-description {
+                line-height: 25px;
+            }
+
+        }
+
+        .model {
+            width: 50%;
+            background-color: #C6F8BD;
+
+            .all-box {
+                margin: 10px;
+                background-color: #9BBFF8;
+                min-height: 130px;
+                display: flex;
+
+                .box {
+                    margin: 5px;
+                    width: 20%;
+                    background-color: #F7FAB2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #f66d6d;
+                    font-size: 30px;
+                }
+
+                .custom1 {
+                    height: 80px;
+                }
+
+                .custom2 {
+                    height: 50px;
+                }
+            }
+
+            .space-between {
+                justify-content: space-between;
+
+            }
+
+            .space-around {
+                justify-content: space-around;
+
+            }
+
+            .flex-start {
+                justify-content: flex-start;
+
+            }
+
+            .flex-end {
+                justify-content: flex-end;
+
+            }
+
+            .nowrap {
+                flex-wrap: nowrap;
+            }
+
+            .wrap {
+                flex-wrap: wrap;
+            }
+
+            .wrap-reverse {
+                flex-wrap: wrap-reverse;
+            }
+
+            .flex-row {
+                flex-direction: row;
+            }
+
+            .row-reverse {
+                flex-direction: row-reverse;
+            }
+
+            .column {
+                flex-direction: column;
+            }
+
+            .column-reverse {
+                flex-direction: column-reverse;
+            }
+
+            .grow-0 {
+                .custom1 {
+                    flex-grow: 0;
+                }
+            }
+
+            .grow-1 {
+                &>:first-child {
+                    flex-grow: 1;
+                }
+            }
+
+            .grow-2 {
+                &>:first-child {
+                    flex-grow: 1;
+                }
+
+                &>:nth-child(2) {
+                    flex-grow: 2;
+                }
+            }
+        }
+    }
+}
+
+.float-box {
+    .row {
+        padding: 20px 0 20px;
+        border-bottom: 1px solid #b6b6b6;
+    }
+
+    p {
+        line-height: 25px;
+    }
+
+    .float-left {
+        overflow: hidden;
+
+        img {
+            float: left;
+            padding-right: 10px;
+        }
+    }
+
+    .float-right {
+        overflow: hidden;
+
+        img {
+            float: right;
+            padding-left: 10px;
+        }
+    }
+
+    .float-none {
+        overflow: hidden;
+
+        img {
+            float: none;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.overflow {
+    .row {
+        padding: 20px 0 20px;
+        border-bottom: 1px solid #b6b6b6;
+        height: 360px;
+    }
+
+    .box {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #d38686;
+        background-color: #FDABAB;
+        padding: 10px;
+    }
+
+    .content {
+        background-color: #C6F8BD;
+        border: 1px solid #a8d89f;
+        width: 350px;
+        height: 230px;
+        padding: 10px;
+    }
+
+    .visible {
+        .box {
+            overflow: visible;
+        }
+    }
+
+    .hidden {
+        .box {
+            overflow: hidden;
+        }
+    }
+
+    .scroll {
+        .box {
+            overflow: scroll;
+        }
+    }
+
+    .auto {
+        .box {
+            overflow: auto;
+        }
+    }
+}
+
+.position {
+    .row {
+        padding: 20px 0 20px;
+        border-bottom: 1px solid #b6b6b6;
+    }
+
+    .boxes {
+        width: 400px;
+        background-color: #9BBFF8;
+        border: 1px solid #6e9eec;
+        padding: 10px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .static {
+        .box {
+            position: static;
+        }
+    }
+
+    .reletives {
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: #F7FAB2;
+        }
+    }
+
+    .absolutes {
+        .boxes {
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            background-color: lightcoral;
+        }
+    }
+
+    .fixeds {
+        .boxes {
+            margin-bottom: 300px;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: lightpink;
+        }
+    }
+
+    .stickys {
+        .boxes {
+            margin-bottom: 1000px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 20px;
+            background-color: #F7FAB2;
+        }
+    }
+
+}

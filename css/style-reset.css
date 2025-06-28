@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  line-height: 1;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+header * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header h1,
+header h2 {
+  text-align: center;
+  padding: 30px 0 30px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #b6b6b6;
+  border-bottom: 1px solid #b6b6b6;
+}
+header ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 15px 30px 15px;
+}
+header ul li a:hover {
+  background-color: #d4ddec;
+}
+header ul .active {
+  background-color: #d4ddec;
+}
+
+.bl-reset {
+  padding: 20px 30px;
+}
+.bl-reset .bl-example {
+  background-color: #f4f4f4;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  width: 100%;
+}
+.bl-reset #btnReset {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+.bl-reset .green {
+  background-color: #C6F8BD;
+  border: 1px solid #86d478;
+  color: #314e2c;
+}
+.bl-reset .green:hover {
+  background-color: #a0cc99;
+  cursor: pointer;
+}
+.bl-reset .rosa {
+  background-color: #ffbebe;
+  border: 1px solid #f99393;
+  color: #5e3333;
+}
+.bl-reset .rosa:hover {
+  background-color: #f49c9c;
+  cursor: pointer;
+}
+
+.reset * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+}
+.reset body {
+  line-height: 1;
+}
+.reset ol,
+.reset ul {
+  list-style: none;
+}
+.reset a {
+  text-decoration: none;
+  color: inherit;
+}
+.reset body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style-reset.css.map */

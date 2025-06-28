@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-work-7</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Home work 7</h1>
+            <ul>
+                <li><a href="index.html">Flex</a></li>
+                <li><a href="float.html">Float</a></li>
+                <li><a href="reset.html">Скидання стилів</a></li>
+                <li class="active"><a href="#">Overflow</a></li>
+                <li><a href="position.html">Позиціонування елементів</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="overflow">
+        <div class="container">
+            <div class="row visible">
+                <h2>overflow: visible</h2>
+                <div class="box">
+                    <div class="content">
+                        <p>Це вміст, який виходить за межі червоного блоку.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row hidden">
+                <h2>overflow: hidden</h2>
+                <div class="box">
+                    <div class="content">
+                        Це вміст, який виходить за межі червоного блоку, але обрізається.
+                    </div>
+                </div>
+            </div>
+            <div class="row scroll">
+                <h2>overflow: scroll</h2>
+                <div class="box">
+                    <div class="content">
+                        Це вміст, який виходить за межі червоного блоку, і з'являються скрол-бари.
+                    </div>
+                </div>
+            </div>
+            <div class="row auto">
+                <h2>overflow: auto</h2>
+                <div class="box">
+                    <div class="content">
+                        Це вміст, який виходить за межі червоного блоку, і скролл з'являється тільки коли це потрібно.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

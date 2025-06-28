@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    line-height: 1;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        padding: 30px 0 30px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid #b6b6b6;
+        border-bottom: 1px solid #b6b6b6;
+
+        li {
+            a {
+                text-decoration: none;
+                color: inherit;
+                display: block;
+                padding: 15px 30px 15px;
+
+                &:hover {
+                    background-color: #d4ddec;
+                }
+            }
+        }
+
+        .active {
+            background-color: #d4ddec;
+        }
+    }
+}
+
+.bl-reset {
+    padding: 20px 30px;
+
+    .bl-example {
+        background-color: #f4f4f4;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    #btnReset {
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .green {
+        background-color: #C6F8BD;
+        border: 1px solid #86d478;
+        color: #314e2c;
+
+        &:hover {
+            background-color: #a0cc99;
+            cursor: pointer;
+        }
+    }
+
+    .rosa {
+        background-color: #ffbebe;
+        border: 1px solid #f99393;
+        color: #5e3333;
+
+        &:hover {
+            background-color: #f49c9c;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+.reset {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: auto;
+    }
+
+    body {
+        line-height: 1;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    body {
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+}

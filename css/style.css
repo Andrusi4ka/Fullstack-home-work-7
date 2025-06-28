@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/*************************************/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 30px 0 30px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #b6b6b6;
+  border-bottom: 1px solid #b6b6b6;
+}
+header ul li a {
+  display: block;
+  padding: 15px 30px 15px;
+}
+header ul li a:hover {
+  background-color: #d4ddec;
+}
+header ul .active {
+  background-color: #d4ddec;
+}
+
+.flex-box .row {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0 20px;
+  border-bottom: 1px solid #b6b6b6;
+}
+.flex-box .row .description {
+  width: 50%;
+}
+.flex-box .row .description .style-name {
+  font-weight: bold;
+  font-family: "Inconsolata", "Source Code Pro", "Consolas", "Monaco", "Courier", monospace;
+  padding: 0 0 15px;
+}
+.flex-box .row .description .style-description {
+  line-height: 25px;
+}
+.flex-box .row .model {
+  width: 50%;
+  background-color: #C6F8BD;
+}
+.flex-box .row .model .all-box {
+  margin: 10px;
+  background-color: #9BBFF8;
+  min-height: 130px;
+  display: flex;
+}
+.flex-box .row .model .all-box .box {
+  margin: 5px;
+  width: 20%;
+  background-color: #F7FAB2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f66d6d;
+  font-size: 30px;
+}
+.flex-box .row .model .all-box .custom1 {
+  height: 80px;
+}
+.flex-box .row .model .all-box .custom2 {
+  height: 50px;
+}
+.flex-box .row .model .space-between {
+  justify-content: space-between;
+}
+.flex-box .row .model .space-around {
+  justify-content: space-around;
+}
+.flex-box .row .model .flex-start {
+  justify-content: flex-start;
+}
+.flex-box .row .model .flex-end {
+  justify-content: flex-end;
+}
+.flex-box .row .model .nowrap {
+  flex-wrap: nowrap;
+}
+.flex-box .row .model .wrap {
+  flex-wrap: wrap;
+}
+.flex-box .row .model .wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-box .row .model .flex-row {
+  flex-direction: row;
+}
+.flex-box .row .model .row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-box .row .model .column {
+  flex-direction: column;
+}
+.flex-box .row .model .column-reverse {
+  flex-direction: column-reverse;
+}
+.flex-box .row .model .grow-0 .custom1 {
+  flex-grow: 0;
+}
+.flex-box .row .model .grow-1 > :first-child {
+  flex-grow: 1;
+}
+.flex-box .row .model .grow-2 > :first-child {
+  flex-grow: 1;
+}
+.flex-box .row .model .grow-2 > :nth-child(2) {
+  flex-grow: 2;
+}
+
+.float-box .row {
+  padding: 20px 0 20px;
+  border-bottom: 1px solid #b6b6b6;
+}
+.float-box p {
+  line-height: 25px;
+}
+.float-box .float-left {
+  overflow: hidden;
+}
+.float-box .float-left img {
+  float: left;
+  padding-right: 10px;
+}
+.float-box .float-right {
+  overflow: hidden;
+}
+.float-box .float-right img {
+  float: right;
+  padding-left: 10px;
+}
+.float-box .float-none {
+  overflow: hidden;
+}
+.float-box .float-none img {
+  float: none;
+  padding-bottom: 10px;
+}
+
+.overflow .row {
+  padding: 20px 0 20px;
+  border-bottom: 1px solid #b6b6b6;
+  height: 360px;
+}
+.overflow .box {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #d38686;
+  background-color: #FDABAB;
+  padding: 10px;
+}
+.overflow .content {
+  background-color: #C6F8BD;
+  border: 1px solid #a8d89f;
+  width: 350px;
+  height: 230px;
+  padding: 10px;
+}
+.overflow .visible .box {
+  overflow: visible;
+}
+.overflow .hidden .box {
+  overflow: hidden;
+}
+.overflow .scroll .box {
+  overflow: scroll;
+}
+.overflow .auto .box {
+  overflow: auto;
+}
+
+.position .row {
+  padding: 20px 0 20px;
+  border-bottom: 1px solid #b6b6b6;
+}
+.position .boxes {
+  width: 400px;
+  background-color: #9BBFF8;
+  border: 1px solid #6e9eec;
+  padding: 10px;
+}
+.position .box {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.position .static .box {
+  position: static;
+}
+.position .reletives .relative {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  background-color: #F7FAB2;
+}
+.position .absolutes .boxes {
+  position: relative;
+}
+.position .absolutes .absolute {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  background-color: lightcoral;
+}
+.position .fixeds .boxes {
+  margin-bottom: 300px;
+}
+.position .fixeds .fixed {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: lightpink;
+}
+.position .stickys .boxes {
+  margin-bottom: 1000px;
+}
+.position .stickys .sticky {
+  position: sticky;
+  top: 20px;
+  background-color: #F7FAB2;
+}/*# sourceMappingURL=style.css.map */

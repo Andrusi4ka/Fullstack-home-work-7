@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-work-7</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Home work 7</h1>
+            <ul>
+                <li class="active"><a href="#">Flex</a></li>
+                <li><a href="float.html">Float</a></li>
+                <li><a href="reset.html">Скидання стилів</a></li>
+                <li><a href="overflow.html">Overflow</a></li>
+                <li><a href="position.html">Позиціонування елементів</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="flex-box">
+        <div class="container">
+            <div class="flex-direction">
+                <h2>flex-direction</h2>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">flex-direction: row;</p>
+                        <p class="style-description">розташовує flex-елементи **в ряд зліва направо** (за замовчуванням). Головна вісь йде горизонтально, а елементи вирівнюються у напрямку зліва направо всередині контейнера.
+                        </p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box flex-row">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">flex-direction: row-reverse;</p>
+                        <p class="style-description">розташовує flex-елементи в ряд справа наліво. Головна вісь залишається горизонтальною, але порядок елементів змінюється на зворотний. Перший елемент буде з правого краю контейнера.
+                        </p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box row-reverse">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">flex-direction: column;</p>
+                        <p class="style-description">розташовує flex-елементи вертикально зверху вниз. Головна вісь стає вертикальною, і елементи розміщуються в стовпчик усередині контейнера.
+                        </p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box column">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">flex-direction: column-reverse;</p>
+                        <p class="style-description">розташовує flex-елементи вертикально знизу вверх. Головна вісь стає вертикальною, але порядок елементів звернений, тому перший елемент буде внизу контейнера.
+                        </p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box column-reverse">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-wrap">
+                <h2>flex-wrap</h2>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">flex-wrap: nowrap;</p>
+                        <p class="style-description">Властивість flex-wrap: nowrap; означає, що flex-елементи не будуть переноситися на новий ряд, навіть якщо їм не вистачає місця.</p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box nowrap">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                            <div class="box custom1">5</div>
+                            <div class="box custom2">6</div>
+                            <div class="box custom1">7</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">flex-wrap: wrap;</p>
+                        <p class="style-description">дозволяє flex-елементам переноситися на новий ряд, якщо їм не вистачає місця в одному рядку. Елементи автоматично переходять нижче, щоб не виходити за межі контейнера. Це корисно для адаптивних макетів.</p>
+
+                    </div>
+                    <div class="model">
+                        <div class="all-box wrap">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                            <div class="box custom1">5</div>
+                            <div class="box custom2">6</div>
+                            <div class="box custom1">7</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">flex-wrap: wrap-reverse;</p>
+                        <p class="style-description">дозволяє flex-елементам переноситися на новий ряд у зворотному напрямку. Це означає, що нові рядки будуть додаватися вгору, а не вниз. Корисно, якщо потрібно змінити напрямок переносу елементів.</p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box wrap-reverse">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                            <div class="box custom1">5</div>
+                            <div class="box custom2">6</div>
+                            <div class="box custom1">7</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content">
+                <h2>justify-content</h2>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">Justify-content: space-between;</p>
+                        <p class="style-description">розміщує flex-елементи так, щоб перший був зліва, останній — справа, а простір рівномірно розподілявся тільки між ними. Відступів з країв немає, усі проміжки знаходяться всередині. Це зручно для меню та панелей.
+                        </p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box space-between">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">justify-content: space-around;</p>
+                        <p class="style-description">розподіляє flex-елементи з однаковими відступами з обох боків кожного елемента. Відступ між елементами вдвічі більший, ніж відступи від країв контейнера. Це створює візуально збалансоване розміщення.
+                        </p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box space-around">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">justify-content: flex-start;</p>
+                        <p class="style-description">justify-content: flex-start; розміщує всі flex-елементи зліва в контейнері (або зверху, якщо напрямок вертикальний).</p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box flex-start">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">justify-content: flex-end;</p>
+                        <p class="style-description">розміщує всі flex-елементи **з правого краю** контейнера (або знизу, якщо напрямок вертикальний). Всі елементи "прилипають" до кінця головної осі. Це зручно, коли потрібно вирівняти контент справа.
+                        </p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box flex-end">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-grow">
+                <h2>flex-grow</h2>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">flex-grow: 0;</p>
+                        <p class="style-description">означає, що flex-елемент не буде розтягуватись, навіть якщо в контейнері є вільне місце. Елемент залишиться своєї початкової ширини або висоти (залежно від напрямку flex).</p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box grow-0">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                            <div class="box custom2">4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">flex-grow: 1;</p>
+                        <p class="style-description">дозволяє flex-елементу рости і займати доступний простір у flex-контейнері. Якщо декілька елементів мають flex-grow: 1, вони рівномірно ділять між собою вільне місце.</p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box grow-1">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <p class="style-name">flex-grow: 2;</p>
+                        <p class="style-description">означає, що flex-елемент буде рости і займати вільний простір у контейнері у 2 рази більше, ніж елементи з flex-grow: 1.</p>
+                    </div>
+                    <div class="model">
+                        <div class="all-box grow-2">
+                            <div class="box custom1">1</div>
+                            <div class="box custom2">2</div>
+                            <div class="box custom1">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
